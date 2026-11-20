@@ -1,0 +1,38 @@
+{
+  "name": "nuxt-site",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@morev/vue-transitions": "^4.0.0",
+    "@nuxt/ui": "^4.13.0",
+    "@tiptap/core": "^3.35.0",
+    "@tiptap/extension-bubble-menu": "^3.35.0",
+    "@tiptap/extension-code": "^3.35.0",
+    "@tiptap/extension-collaboration": "^3.35.0",
+    "@tiptap/extension-drag-handle": "^3.35.0",
+    "@tiptap/extension-drag-handle-vue-3": "^3.35.0",
+    "@tiptap/extension-floating-menu": "^3.35.0",
+    "@tiptap/extension-horizontal-rule": "^3.35.0",
+    "@tiptap/extension-image": "^3.35.0",
+    "@tiptap/extension-mention": "^3.35.0",
+    "@tiptap/extension-node-range": "^3.35.0",
+    "@tiptap/extension-placeholder": "^3.35.0",
+    "@tiptap/markdown": "^3.35.0",
+    "@tiptap/pm": "^3.35.0",
+    "@tiptap/starter-kit": "^3.35.0",
+    "@tiptap/suggestion": "^3.35.0",
+    "@tiptap/vue-3": "^3.35.0",
+    "nuxt": "^4.6.4",
+    "tailwindcss": "^4.3.5",
+    "typescript": "^7.0.2",
+    "vue": "^3.5.45",
+    "vue-router": "^5.4.0"
+  }
+}
