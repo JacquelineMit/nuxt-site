@@ -1,6 +1,11 @@
+<script setup>
+const test = "Hello";
+</script>
+
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+  <UApp>
+    <NuxtPage />
+  </UApp>
 </template>
+
+<style scoped></style>
