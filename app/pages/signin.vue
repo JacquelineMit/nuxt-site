@@ -9,6 +9,7 @@ async function clickButton() {
   loading.value = true;
   await login(state.email, state.password);
   loading.value = false;
+  navigateTo(`/`);
 }
 async function login(email, password) {
   const form = new FormData();
