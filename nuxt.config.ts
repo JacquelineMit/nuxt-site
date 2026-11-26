@@ -4,4 +4,9 @@ export default defineNuxtConfig({
   css: ["~/assets/css/index.css"],
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
+  routeRules: {
+    "/api/**": {
+      proxy: "http://localhost:3001/**",
+    },
+  },
 });

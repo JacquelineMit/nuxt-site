@@ -5,11 +5,22 @@ const state = reactive({
 });
 console.log(state);
 let loading = ref(false);
-function clickButton() {
+async function clickButton() {
   loading.value = true;
-  setTimeout(function () {
-    loading.value = false;
-  }, 5000);
+  await login(state.email, state.password);
+  loading.value = false;
+}
+async function login(email, password) {
+  const form = new FormData();
+  form.append("email", email);
+  form.append("password", password);
+  const response = await fetch(`/api/user/signin`, {
+    method: "POST",
+    body: form,
+    credentials: "include",
+  });
+  const data = await response.json();
+  return data;
 }
 </script>
 
