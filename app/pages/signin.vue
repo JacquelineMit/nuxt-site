@@ -26,20 +26,53 @@ async function login(email, password) {
 </script>
 
 <template>
-  <main>
-    <h1>Вход</h1>
-    <form>
-      <UFormField label="Email" name="email">
-        <UInput v-model="state.email" />
+  <main class="main">
+    <form class="form">
+      <h1 class="title">Вход</h1>
+      <UFormField class="cont-input" label="Email" name="email">
+        <UInput class="input" v-model="state.email" />
       </UFormField>
-      <UFormField label="Password" name="password">
-        <UInput v-model="state.password" type="password" />
+      <UFormField class="cont-input" label="Password" name="password">
+        <UInput class="input" v-model="state.password" type="password" />
       </UFormField>
-      <UButton :loading="loading" type="submit" @click="clickButton">
+      <UButton
+        class="submit"
+        :loading="loading"
+        type="submit"
+        @click="clickButton"
+      >
         Submit
       </UButton>
     </form>
   </main>
 </template>
 
-<style></style>
+<style>
+.main {
+  min-height: 100vh;
+  margin: 0;
+  padding: 24px;
+  display: grid;
+  place-items: center;
+  background-color: #edf4ef;
+  border: 10px solid #d4e3d8;
+  border-radius: 20px;
+}
+.title {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: bold;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: #e8f4eb;
+  border: 5px solid #d4e3d8;
+  border-radius: 20px;
+  padding: 30px;
+}
+</style>
