@@ -70,9 +70,14 @@ async function login(email, password) {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  background-color: #e8f4eb;
+  background-color: #eef9f1;
   border: 5px solid #d4e3d8;
   border-radius: 20px;
   padding: 30px;
+}
+.cont-input {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 12px;
+  margin-bottom: 5px;
 }
 </style>
