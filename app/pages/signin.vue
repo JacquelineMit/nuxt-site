@@ -9,7 +9,7 @@ async function clickButton() {
   loading.value = true;
   await login(state.email, state.password);
   loading.value = false;
-  navigateTo(`/`);
+  navigateTo(`/users`);
 }
 async function login(email, password) {
   const form = new FormData();
